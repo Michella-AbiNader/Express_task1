@@ -17,9 +17,8 @@ const validator = schema =>(req,res,next) =>{
 
 
 const todoSchema = joi.object({
-    id: joi.number().positive().required(),
     todo: joi.string().required(),
-    isCompleted: joi.bool().required(),
+    isCompleted: joi.string().required(),
 })
 
 module.exports = {
